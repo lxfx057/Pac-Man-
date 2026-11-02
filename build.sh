@@ -87,7 +87,7 @@ echo "})();" >> $OUTPUT
 sed -i '.bak' "s/last updated:[^<]*/last updated: $(date) -->/" index.html
 
 # build debug.html from index.html adding debug includes
-sed "s:.*$output.*:$debug_includes:" index.html > debug.html
+sed "s:.*$OUTPUT.*:$debug_includes:" index.html > debug.html
 
 # reset the public folder
 
